@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>MWM Admin</title>
+
+    <link rel="stylesheet" href="contents/css/newbootstrap.css">
+
+    <!-- External Libraries -->
+    <!--<script src="contents/lib/angular.js"></script>
+    <script src="contents/lib/underscore.js"></script>-->
+    <!--<script src="contents/lib/angular-route.js"></script>
+    <script src="contents/lib/angular-cookies.js"></script>
+    <script src="contents/lib/angular-sanitize.js"></script>-->
+
+    <script src="./contents/lib/angular.js"></script>
+    <script src="./contents/lib/angular-route.js"></script>
+    <script src="./contents/lib/underscore.js"></script>
+    <script src="./contents/lib/moment.js"></script>
+    <script src="./contents/lib/angular-moment.js"></script>
+    <script src="./contents/lib/UnderscoreService.js"></script>
+    <script src="./contents/lib/jquery.js"></script>
+    <script src="./contents/lib/bootstrap.js"></script>
+
+    <script src="./contents/js/login.js"></script>
+
+    <script src="./app/app.js"></script>
+</head>
+
+<body ng-app="sb" ng-controller="indexController as index">
+    <div ng-if="index.showHeader" ng-include="'views/partials/topNavBar.html'"></div>
+    <div class="container" ng-cloak>
+        <div ng-view></div>
+    </div>
+
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container-fluid" style="text-align: center; padding:10px;">
+            &copy; Shreyas
+        </div>
+    </nav>
+</body>
+
+</html>
